@@ -16,6 +16,7 @@ body {
     background: #171717;
     font-family: "GT Walsheim", "sans-serif";
     transform-style: preserve-3d;
+    overflow-x: hidden;
 }
 
 
@@ -108,9 +109,11 @@ body {
     width: 100vw;
     height: 100vh;
     position: relative;
-    background-image: url("../assets/Group\ 33.svg");
+    background-image: url(../assets/shapes.png);
+    background-position: center center;
     background-repeat: no-repeat;
-    background-position:center;
+    background-size: contain;
+    transform: scale(1.1);
 }
 .description {
     font-weight: normal;
@@ -125,12 +128,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-.shapes {
-
-}
-
-
 
 
 @keyframes reveal_opacity {
