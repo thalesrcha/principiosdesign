@@ -1,6 +1,147 @@
+@font-face {
+    font-family: "GT Walsheim";
+    font-weight: normal;
+    src: url("../fonts/gt-walsheim-regular.ttf");
+}
+
+@font-face {
+    font-family: "GT Walsheim";
+    font-weight: 500;
+    src: url("../fonts/gt-walsheim-medium.ttf");
+}
+
+
 body {
 
-    background: red;
-    font-family: sans-serif;
+    background: #171717;
+    font-family: "GT Walsheim", "sans-serif";
+    transform-style: preserve-3d;
+}
+
+
+.hero {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+.intro {
+    display: flex;
+    width: 40vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8vw;
+    letter-spacing: -0.05em;
+    color: white;
+    margin-left: 6%;
+}
+
+.title {
+    margin-bottom: 4vw;
+}
+
+.logo {
+    margin-top: 8%;
+    margin-left: 8%;
+    animation: reveal_opacity 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation-delay: 0.8s;
+}
+
+.logo img {
+    width: 3.5vw;
+}
+
+.grafism {
+    width: 47vw;
+    margin-top: 3%;
+    animation: reveal_opacity 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.grafism img {
+    width: 100%;
+    height: auto;
+}
+
+.revealContent {
+  transform: translateY(100%);
+  animation: reveal 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation-delay: 0.8s;
+
+}
+
+.revealContent2 {
+    transform: translateY(100%);
+    animation: reveal 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation-delay: 1s;
+    padding-bottom: 1%;
+  
+}
+
+.revealContent3 {
+    transform: translateY(100%);
+    animation: reveal 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation-delay: 1.2s;
+  
+}
+
+.reveal { 
+    margin: 0 8% -6%;
+    overflow: hidden;
+}
+
+.reveal_opacity {
+    animation-delay: 0.8s;
+    animation-duration: 1s;
+    opacity: 0;
+    transform: translateY(8px);
+}
+
+
+.principle_intro {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: url("../assets/Group\ 33.svg");
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.description {
+    font-weight: normal;
+    font-size: 2vw;
+    line-height: 118%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    max-width: 46vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.shapes {
+
+}
+
+
+
+
+@keyframes reveal_opacity {
+    from {transform:translateY(8px); opacity: 0;}
+    to {transform:translateY(0); opacity: 1;}
+  }
+
+
+
+@keyframes reveal {
+  from {transform: translateY(100%);}
+  to {transform: translateY(0);}
 }
 
