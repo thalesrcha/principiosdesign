@@ -10,6 +10,12 @@
     src: url("../fonts/gt-walsheim-medium.ttf");
 }
 
+@font-face {
+    font-family: "GT Sectra";
+    font-weight: normal;
+    src: url("../fonts/GT-Sectra-Regular.OTF");
+}
+
 
 body {
 
@@ -135,6 +141,84 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
+
+.principlesContainer {
+    display: flex;
+    width: 100vw;
+    margin-top: 4vw;
+    justify-content: space-between;
+    height: auto;
+}
+
+.stickyTitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw;
+    line-height: 118%;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin-left: 4%;
+    width: 20vw;
+    height: 180vh;
+    position: -webkit-sticky;
+    position: relative;
+}
+
+.stickyTitle .test {
+ top: 50px;
+ position: sticky;
+ margin-top: 1vw;
+}
+
+.list {
+    width: 70vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.principle {
+    width: 35%;
+    color: #FFFFFF;
+    margin-right: 9vw;
+    margin-bottom: 9vw;
+    margin-top: -2vw;
+}
+
+.principle p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3vw;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    opacity: 0.7;
+}
+
+.principle h1 {
+    font-family: "GT Sectra";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8vw;
+    line-height: 1%;
+    letter-spacing: -0.02em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.principle h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2vw;
+    line-height: 118%;
+    letter-spacing: -0.03em;
+}
+
+
+
+
+
+
 
 
 @keyframes reveal_opacity {
