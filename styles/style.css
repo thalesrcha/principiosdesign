@@ -140,6 +140,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: left;
+    margin-left: 4.8vw;
 }
 
 
@@ -194,6 +196,8 @@ body {
     line-height: 130%;
     letter-spacing: -0.02em;
     opacity: 0.7;
+    margin: 4% 0 0 0;
+
 }
 
 .principle h1 {
@@ -201,9 +205,10 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 8vw;
-    line-height: 1%;
+    line-height: 140%;
     letter-spacing: -0.02em;
     font-feature-settings: 'pnum' on, 'lnum' on;
+    margin: 0;
 }
 
 .principle h2 {
@@ -212,6 +217,7 @@ body {
     font-size: 2vw;
     line-height: 118%;
     letter-spacing: -0.03em;
+    margin: 6% 0 0 0;
 }
 
 
