@@ -22,6 +22,7 @@ body {
     background: #171717;
     font-family: "GT Walsheim", "sans-serif";
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
 }
 
 
