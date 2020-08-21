@@ -15,7 +15,6 @@ body {
 
     background: #171717;
     font-family: "GT Walsheim", "sans-serif";
-    transform-style: preserve-3d;
     overflow-x: hidden;
 }
 
@@ -55,8 +54,16 @@ body {
     animation-delay: 0.8s;
 }
 
+.logo img:hover {
+        opacity: 0.6;
+        transform: rotateY(360deg);
+} 
+
+
 .logo img {
     width: 3.5vw;
+    transition: all 600ms;
+    
 }
 
 .grafism {

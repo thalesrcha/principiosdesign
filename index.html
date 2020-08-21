@@ -5,12 +5,13 @@
     <title>Princípios de Desgin</title>
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+    <link href="./pointer.css" rel="stylesheet">
 </head>
 <body>
 
     <div class="hero">
         <div class="intro">
-            <div class="logo reveal_opacity"><img src="assets/logo.svg" alt=""></div>
+            <div class="logo reveal_opacity"><a href="http://trin.ca" target="_blank" ><img  src="assets/logo.svg" alt=""></a></div>
             <div class="title">
                 <div class="heading reveal"><div class="revealContent">Princípios</div></div>
                 <div class="heading reveal"><div class="revealContent2">de design</div></div>
@@ -25,8 +26,15 @@
 
     </div>
 
+    <div class="custom-cursor"></div>
+</body>
 
-
-
-</body> 
+<script src="./pointer.js"></script>
+    <script>
+        init_pointer({
+	    pointerColor: "white", // Css color
+	    ringSize: 20, // Pixels
+	    ringClickSize: 18 // Pixels when clicking
+})
+    </script>
 </html>
