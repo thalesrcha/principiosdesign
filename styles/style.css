@@ -118,17 +118,25 @@ body {
     transform: translateY(8px);
 }
 
+.background-image {
+    margin: 100px 0 120px 0;
+    width: 100%;
+    opacity: .4;
+    position: relative;
+    top: 50px;
+}
 
 .principle_intro {
-    width: 100vw;
-    height: 100vh;
     position: relative;
-    background-image: url(../assets/shapes.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    transform: scale(1.1);
+    overflow-x: hidden;
+    perspective: 8px;
+    perspective-origin: 0%;
+    display: flex;
+    width: auto;
+    height: auto;
+    transform-origin: 0;
 }
+
 .description {
     font-weight: normal;
     font-size: 2vw;
@@ -144,8 +152,6 @@ body {
     text-align: left;
     margin-left: 4.6vw;
 }
-
-
 
 .principlesContainer {
     display: flex;
