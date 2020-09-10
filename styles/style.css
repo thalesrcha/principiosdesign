@@ -16,6 +16,18 @@
     src: url("../fonts/GT-Sectra-Regular.OTF");
 }
 
+@font-face {
+    font-family: "GT Sectra";
+    font-weight: 300;
+    src: url("../fonts/GT-Sectra-Book.OTF");
+}
+
+@font-face {
+    font-family: "GT Sectra";
+    font-style: italic;
+    src: url("../fonts/GT-Sectra-Bold-Italic.OTF");
+}
+
 
 @font-face {
     font-family: "GT Walsheim";
@@ -71,7 +83,7 @@ body {
 
 .logo img:hover {
         opacity: 0.6;
-        transform: rotateY(360deg);
+        transform: translateY(2px);
 } 
 
 
@@ -144,20 +156,22 @@ body {
 }
 
 .description {
-    font-weight: normal;
+    font-family: "GT Sectra";
+    font-weight: 300;
     font-size: 2.9vw;
-    line-height: 108%;
+    line-height: 120%;
     text-align: center;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.02em;
     color: #FFFFFF;
-    max-width: 64vw;
+    max-width: 53vw;
     position: absolute;
     text-align: center;
-    font-variant: all-small-caps;
 }
 
 .description span {
     font-style: italic;
+
+    
 }
 
 .principlesContainer {
@@ -177,7 +191,7 @@ body {
     color: #FFFFFF;
     margin-left: 4%;
     width: 20vw;
-    height: 190vh;
+    height: 205vh;
     position: -webkit-sticky;
     position: relative;
 }
@@ -234,6 +248,51 @@ body {
     margin: 6% 0 0 0;
 }
 
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 6% 6% 0;
+    color: white;
+    font-size: 1vw;
+}
+
+.footer .name {
+    opacity: 0.4;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    margin-right: 16px;
+    opacity: 0.4;
+    transition: all 600ms;
+}
+
+
+.footer a:hover {
+    opacity: 1;
+}
+
+.footer a::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    transform-origin: bottom left;
+    transform: scaleX(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer a:hover::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
 
 
 
