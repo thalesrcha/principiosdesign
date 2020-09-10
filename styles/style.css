@@ -145,15 +145,15 @@ body {
 
 .description {
     font-weight: normal;
-    font-size: 2.3vw;
-    line-height: 130%;
+    font-size: 2.9vw;
+    line-height: 108%;
     text-align: center;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.05em;
     color: #FFFFFF;
     max-width: 64vw;
     position: absolute;
     text-align: center;
-    text-transform: uppercase;
+    font-variant: all-small-caps;
 }
 
 .description span {
@@ -177,7 +177,7 @@ body {
     color: #FFFFFF;
     margin-left: 4%;
     width: 20vw;
-    height: 180vh;
+    height: 190vh;
     position: -webkit-sticky;
     position: relative;
 }
