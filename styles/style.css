@@ -87,8 +87,8 @@ body {
     animation: reveal_opacity 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
-.grafism img {
-    width: 100%;
+.grafism .img {
+    width: 104%;
     height: auto;
 }
 
