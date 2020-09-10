@@ -17,6 +17,14 @@
 }
 
 
+@font-face {
+    font-family: "GT Walsheim";
+    font-style: italic;
+    font-weight: bold;
+    src: url("../fonts/gt-walsheim-bold-oblique.ttf");
+}
+
+
 body {
 
     background: #171717;
@@ -128,28 +136,28 @@ body {
 .principle_intro {
     position: relative;
     overflow-x: hidden;
-    perspective: 8px;
-    perspective-origin: 0%;
     display: flex;
     width: auto;
     height: auto;
-    transform-origin: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 .description {
     font-weight: normal;
-    font-size: 2vw;
-    line-height: 118%;
+    font-size: 2.3vw;
+    line-height: 130%;
     text-align: center;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
     color: #FFFFFF;
-    max-width: 46vw;
+    max-width: 64vw;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: left;
-    margin-left: 4.6vw;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.description span {
+    font-style: italic;
 }
 
 .principlesContainer {
