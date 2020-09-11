@@ -313,8 +313,9 @@ body {
     }
 
     .title {
-        margin-bottom: 20%;
+        margin-bottom: 26%;
     }
+
 
     .logo img {
         width: 12vw;
@@ -383,7 +384,7 @@ body {
 
     .footer {
         font-size: 4.5vw;
-        margin: 0 0 6% 0;
+        margin: 0 0 18% 0;
     }
 
     .footer a {
